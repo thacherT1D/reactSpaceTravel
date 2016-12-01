@@ -6,10 +6,7 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
 import Main from './Main';
 import NavBar from './NavBar';
-
-const style = {
-  color: 'red'
-};
+import Mars from './Mars';
 
 const Home = React.createClass({
   render() {
@@ -17,15 +14,8 @@ const Home = React.createClass({
       <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
         <div>
         <NavBar />
-        <Main />
-        <Grid fluid>
-        <Row>
-        <Col style={style} xs={6} md={3}>Hello, world!</Col>
-        <Col xs={6} md={3}>Hello, world!</Col>
-        <Col xs={6} md={3}>Hello, world!</Col>
-        <Col xs={6} md={3}>Hello, world!</Col>
-        </Row>
-        </Grid>
+        {/* <Main /> */}
+        <Mars />
         </div>
       </MuiThemeProvider>
     )
