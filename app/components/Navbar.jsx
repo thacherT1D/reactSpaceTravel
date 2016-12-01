@@ -27,7 +27,7 @@ import {grey800, cyan700} from 'material-ui/styles/colors';
              hoverColor={cyan700}
              rippleColor={cyan700}
              onClick={this.handleToggle}>
-            <FontIcon className="menuButton material-icons" color={grey800}>menu</FontIcon>
+            <FontIcon className="menuButton material-icons">menu</FontIcon>
            </FlatButton>}
           //  showMenuIconButton={false}
          />

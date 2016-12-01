@@ -5,7 +5,7 @@ const Mars = React.createClass({
   render() {
     return (
       <main>
-        <h1>Mars</h1>
+        <h1>NOT FOUND 404</h1>
         <div>
           <FlatButton label="earth" default={true} href="/"/>
           <FlatButton label="moon" primary={true} href="/moon"/>
