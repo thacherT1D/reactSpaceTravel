@@ -1,9 +1,11 @@
 import React from 'react';
 import {Grid, Row, Col} from 'react-flexbox-grid/lib';
-import Main from './Main';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
+
+import Main from './Main';
+import NavBar from './NavBar';
 
 const style = {
   color: 'red'
@@ -14,6 +16,7 @@ const Home = React.createClass({
     return (
       <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
         <div>
+        <NavBar />
         <Main />
         <Grid fluid>
         <Row>

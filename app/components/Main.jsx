@@ -11,7 +11,7 @@ const Main = React.createClass({
     return (
       <MuiThemeProvider>
         <div>
-Allo
+        Allo
         </div>
       </MuiThemeProvider>
     )

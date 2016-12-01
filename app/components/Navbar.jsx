@@ -1,0 +1,51 @@
+import React from 'react';
+import { Link } from 'react-router';
+import AppBar from 'material-ui/AppBar';
+
+import Drawer from 'material-ui/Drawer';
+import MenuItem from 'material-ui/MenuItem';
+import RaisedButton from 'material-ui/RaisedButton';
+import FlatButton from 'material-ui/FlatButton';
+import FontIcon from 'material-ui/FontIcon';
+import {grey800, cyan700} from 'material-ui/styles/colors';
+
+ const NavBar = React.createClass({
+   getInitialState() {
+     return {
+       open: false
+     }
+   },
+   handleToggle() {
+     this.setState({open: !this.state.open});
+   },
+   render() {
+     return (
+       <div>
+         <AppBar
+          //  title="Space Jam"
+           iconElementLeft={<FlatButton
+             hoverColor={cyan700}
+             rippleColor={cyan700}
+             onClick={this.handleToggle}>
+            <FontIcon className="menuButton material-icons" color={grey800}>menu</FontIcon>
+           </FlatButton>}
+          //  showMenuIconButton={false}
+         />
+         <div>
+
+           <Drawer
+             width={200} openSecondary={true}
+             open={this.state.open}>
+             <MenuItem href="/">Earth</MenuItem>
+             <MenuItem href="/moon">Moon</MenuItem>
+             <MenuItem href="/mars">Mars</MenuItem>
+             <MenuItem onClick={this.handleToggle}>Close</MenuItem>
+
+           </Drawer>
+         </div>
+       </div>
+     )
+   }
+ });
+
+export default NavBar;
