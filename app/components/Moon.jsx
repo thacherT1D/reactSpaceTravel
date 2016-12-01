@@ -7,20 +7,25 @@ import FlatButton from 'material-ui/FlatButton';
 const Moon = React.createClass({
   getInitialState() {
     return {
-      movies: [],
       jobs: [],
       loadErr: false,
      }
   },
 
-  componentDidMount() {
-    axios.get(`http://www.omdbapi.com/?s=bob`)
-      .then(res => {
-        this.setState({ movies: res.Search });
-      })
-      .catch(err => {
-        this.setState({ loadErr: err });
-      });
+  componentDidMount: function() {
+    var _this = this;
+    this.serverRequest =
+      axios
+        .get("http://codepen.io/jobs.json")
+        .then(function(result) {
+          _this.setState({
+            jobs: result.data.jobs
+          });
+        })
+  },
+
+  componentWillUnmount: function() {
+    this.serverRequest.abort();
   },
 
   render() {
