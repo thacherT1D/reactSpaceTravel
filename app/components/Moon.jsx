@@ -5,23 +5,23 @@ import FlatButton from 'material-ui/FlatButton';
 
 
 const Moon = React.createClass({
-  // getInitialState() {
-  //   return {
-  //     movies: [],
-  //     jobs: [],
-  //     loadErr: false,
-  //    }
-  // },
+  getInitialState() {
+    return {
+      movies: [],
+      jobs: [],
+      loadErr: false,
+     }
+  },
 
-  // componentDidMount() {
-  //   axios.get(`http://www.omdbapi.com/?s=bob`)
-  //     .then(res => {
-  //       this.setState({ movies: res.Search });
-  //     })
-  //     .catch(err => {
-  //       this.setState({ loadErr: err });
-  //     });
-  // },
+  componentDidMount() {
+    axios.get(`http://www.omdbapi.com/?s=bob`)
+      .then(res => {
+        this.setState({ movies: res.Search });
+      })
+      .catch(err => {
+        this.setState({ loadErr: err });
+      });
+  },
 
   render() {
     return (
@@ -31,7 +31,7 @@ const Moon = React.createClass({
       <FlatButton label="moon" primary={true} href="/moon"/>
       <FlatButton label="mars" secondary={true} href="/mars"/>
 
-        {/* <div>
+        <div>
           <h1>Jobs!</h1>
           {this.state.jobs.map(function(job) {
             return (
@@ -45,7 +45,7 @@ const Moon = React.createClass({
               </div>
             );
           })}
-        </div> */}
+        </div>
       </main>
     )
   }

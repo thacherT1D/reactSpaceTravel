@@ -5,7 +5,7 @@ import Dialog from 'material-ui/Dialog';
 const Mars = React.createClass({
   getInitialState() {
     return {
-      open: false
+      open: false,
     }
   },
   handleOpen() {
@@ -13,6 +13,12 @@ const Mars = React.createClass({
   },
   handleClose() {
     this.setState({open: false});
+  },
+  handleOpenSecond() {
+    this.setState({open2: true});
+  },
+  handleCloseSecond() {
+    this.setState({open2: false});
   },
   render() {
     const actions = [
@@ -24,8 +30,19 @@ const Mars = React.createClass({
       <FlatButton
         label="Submit"
         primary={true}
-        disabled={true}
         onTouchTap={this.handleClose}
+      />
+    ];
+    const actionsSecond = [
+      <FlatButton
+        label="Cancel"
+        primary={true}
+        onTouchTap={this.handleCloseSecond}
+      />,
+      <FlatButton
+        label="Submit"
+        primary={true}
+        onTouchTap={this.handleCloseSecond}
       />,
     ];
     return (
@@ -39,6 +56,15 @@ const Mars = React.createClass({
           open={this.state.open}
         >
           Only actions can close this dialog.
+        </Dialog>
+        <FlatButton label="Second Modal Dialog" onClick={this.handleOpenSecond} />
+        <Dialog
+          title="Dialog With Actions"
+          actions={actionsSecond}
+          modal={true}
+          open={this.state.open2}
+        >
+          Only actions can close this dialog SECOND.
         </Dialog>
         <div>
           <FlatButton label="earth" default={true} href="/"/>
