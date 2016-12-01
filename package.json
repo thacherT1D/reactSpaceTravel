@@ -1,22 +1,22 @@
 {
-  "name": "react-flexbox-grid-example",
+  "name": "",
   "version": "1.0.0",
-  "description": "Example using react-flexbox-grid",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/roylee0704/react-flexbox-grid-example.git"
+    "url": ""
   },
-  "keywords": [
-    "react",
-    "react-component",
-    "flexboxgrid",
-    "flexbox",
-    "components"
-  ],
+  "dependencies": {
+  "material-ui": "^0.16.4",
+  "react": "~15.3.0",
+  "react-dom": "~15.3.0",
+  "react-router": "^4.0.0-alpha.6",
+  "react-tap-event-plugin": "~1.0.0"
+  },
   "devDependencies": {
     "autoprefixer": "^6.0.3",
     "babel-core": "^6.1.4",
@@ -34,8 +34,6 @@
     "flexboxgrid": "^6.3.0",
     "node-sass": "^3.4.1",
     "postcss-loader": "^0.7.0",
-    "react": "^0.14",
-    "react-dom": "^0.14.2",
     "react-flexbox-grid": "^0.9.5",
     "react-hot-loader": "^1.3.1",
     "react-transform-catch-errors": "^1.0.0",
@@ -47,10 +45,10 @@
     "webpack-dev-middleware": "^1.2.0",
     "webpack-hot-middleware": "^2.4.1"
   },
-  "author": "roylee0704 <roylee0704@gmail.com> (https://twitter.com/roylee0704)",
+  "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/roylee0704/react-flexbox-grid-example/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/roylee0704/react-flexbox-grid-example#readme"
+  "homepage": ""
 }
