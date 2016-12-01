@@ -16,14 +16,14 @@ app.use(require('webpack-dev-middleware')(compiler, {
 app.use(require('webpack-hot-middleware')(compiler));
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, './www/index.html'));
+  res.sendFile(path.join(__dirname, './app/assets/index.html'));
 });
 
-app.listen(8080, '0.0.0.0', (err) => {
+app.listen(8000, '0.0.0.0', (err) => {
   if (err) {
     console.log(err);
     return;
   }
 
-  console.log('Listening at http://0.0.0.0:8080');
+  console.log('Listening at http://0.0.0.0:8000');
 });
