@@ -12,6 +12,8 @@ import Footer from './Footer';
 
 import React from 'react';
 
+
+
 const Home = React.createClass({
   render() {
     return (
