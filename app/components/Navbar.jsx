@@ -22,25 +22,16 @@ import {grey800, cyan700} from 'material-ui/styles/colors';
      return (
        <div>
          <AppBar
-          //  title="Space Jam"
-           iconElementLeft={<FlatButton
-             hoverColor={cyan700}
-             rippleColor={cyan700}
-             onClick={this.handleToggle}>
-            <FontIcon className="menuButton material-icons">menu</FontIcon>
-           </FlatButton>}
-          //  showMenuIconButton={false}
+         onLeftIconButtonTouchTap={this.handleToggle}
          />
          <div>
-
            <Drawer
-             width={200} openSecondary={true}
+             width={200}
              open={this.state.open}>
              <MenuItem href="/">Earth</MenuItem>
              <MenuItem href="/moon">Moon</MenuItem>
              <MenuItem href="/mars">Mars</MenuItem>
              <MenuItem onClick={this.handleToggle}>Close</MenuItem>
-
            </Drawer>
          </div>
        </div>
