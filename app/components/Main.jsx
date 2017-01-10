@@ -9,9 +9,6 @@ import NotFound from './NotFound';
 
 import React from 'react';
 
-const style = {
-  color: 'green'
-};
 
 const Main = React.createClass({
   render() {

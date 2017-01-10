@@ -1,6 +1,6 @@
 import { link } from 'react-router'
-import NavBar from './NavBar'
 import React from 'react'
+import { Navbar, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap'
 
 
 const Header = React.createClass({
@@ -11,7 +11,6 @@ const Header = React.createClass({
         height: 500,
         backgroundSize: 'cover',
         }}>
-        <NavBar />
       </header>
     )
   }
