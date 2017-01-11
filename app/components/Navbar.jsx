@@ -9,13 +9,13 @@ import { Button } from 'reactstrap';
      return (
        <div>
          <Navbar color="faded" light>
-           <NavbarBrand href="/">reactstrap</NavbarBrand>
+           <NavbarBrand href="/">SpaceTravel</NavbarBrand>
            <Nav className="float-right" navbar>
              <NavItem>
-               <NavLink href="/components/">Components</NavLink>
+               <NavLink href="/moon">Moon</NavLink>
              </NavItem>
              <NavItem>
-               <NavLink href="https://github.com/reactstrap/reactstrap">Github</NavLink>
+               <NavLink href="/mars">Mars</NavLink>
              </NavItem>
            </Nav>
          </Navbar>

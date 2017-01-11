@@ -1,6 +1,6 @@
 import React from 'react'
 
-var divStyle = {
+var footerStyle = {
   background: "#eee",
   padding: "20px",
   width: "100%",
@@ -12,7 +12,7 @@ const Footer = React.createClass({
   render() {
     return (
 
-      <footer style ={divStyle}>
+      <footer style ={footerStyle}>
         &copy; Space is Rad! 🚀
       </footer>
     )

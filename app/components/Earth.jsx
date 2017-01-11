@@ -1,20 +1,23 @@
 import {Grid, Row, Col} from 'react-flexbox-grid/lib';
 
 import React from 'react';
-import { Button } from 'reactstrap';
-import { Navbar, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import {  } from 'reactstrap';
+import { Container, Navbar, NavbarBrand, Nav, NavItem, NavLink, Button } from 'reactstrap';
+
+var planetStyle = {
+  margin: "100px"
+}
 
 const Earth = React.createClass({
   render() {
     return (
         <div>
-        <Button color="danger">Danger!</Button>
           <h1>Earth</h1>
-          <div>
-            <Button label="earth" default={true} href="/"/>
-            <Button label="moon" primary={true} href="/moon"/>
-            <Button label="mars" secondary={true} href="/mars"/>
-          </div>
+          <Container style = {planetStyle}>
+            <Button label="earth" default={true} href="/">Thing 1</Button>
+            <Button label="moon" primary={true} href="/moon">Thing 2</Button>
+            <Button label="mars" secondary={true} href="/mars">Thing 3</Button>
+          </Container>
         </div>
     )
   }
