@@ -14,14 +14,6 @@ const Main = React.createClass({
   render() {
     return (
         <div>
-        {/* <Grid fluid>
-        <Row>
-        <Col style={style} xs={6} md={3}>Main What world!</Col>
-        <Col xs={6} md={3}>Main What world!</Col>
-        <Col xs={6} md={3}>Main What world!</Col>
-        <Col xs={6} md={3}>Main What world!</Col>
-        </Row>
-        </Grid> */}
           <Match pattern="/" exactly component={Earth} />
           <Match pattern="/moon" component={Moon} />
           <Match pattern="/mars" component={Mars} />

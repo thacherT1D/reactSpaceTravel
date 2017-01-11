@@ -4,6 +4,7 @@ import { Navbar, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 import { Button } from 'reactstrap';
 
  const NavBar = React.createClass({
+
    render() {
      return (
        <div>

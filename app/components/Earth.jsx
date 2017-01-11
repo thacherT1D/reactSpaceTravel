@@ -10,7 +10,11 @@ const Earth = React.createClass({
         <div>
         <Button color="danger">Danger!</Button>
           <h1>Earth</h1>
-
+          <div>
+            <Button label="earth" default={true} href="/"/>
+            <Button label="moon" primary={true} href="/moon"/>
+            <Button label="mars" secondary={true} href="/mars"/>
+          </div>
         </div>
     )
   }
