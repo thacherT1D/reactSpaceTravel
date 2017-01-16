@@ -11,6 +11,9 @@ import { Button } from 'reactstrap';
          <Navbar color="faded" light>
            <NavbarBrand href="/">SpaceTravel</NavbarBrand>
            <Nav className="float-right" navbar>
+           <NavItem>
+             <NavLink href="/earth">Earth</NavLink>
+           </NavItem>
              <NavItem>
                <NavLink href="/moon">Moon</NavLink>
              </NavItem>

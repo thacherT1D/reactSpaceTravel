@@ -5,7 +5,9 @@ var footerStyle = {
   padding: "20px",
   width: "100%",
   display: 'flex',
-  justifyContent: 'center'
+  justifyContent: 'center',
+  position: 'fixed',
+  bottom: "0px",
 };
 
 const Footer = React.createClass({
